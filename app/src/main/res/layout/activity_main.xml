@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Basic Calculator Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp"
+            android:padding="16dp"
+            android:background="@drawable/blue_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:text="@string/basic_calculator"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/enter_first_number"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etNum2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autofillHints="none"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/enter_second_number"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    style="@style/CalcButton"
+                    android:layout_width="68dp"
+                    android:layout_height="69dp"
+                    android:text="@string/plus"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnSub"
+                    style="@style/CalcButton"
+                    android:layout_width="74dp"
+                    android:layout_height="64dp"
+                    android:text="@string/minus"
+                    android:textColor="@color/black"
+                    android:textColorLink="#3A1B1B" />
+
+                <Button
+                    android:id="@+id/btnMul"
+                    style="@style/CalcButton"
+                    android:layout_width="75dp"
+                    android:layout_height="64dp"
+                    android:text="@string/multiply"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnDiv"
+                    style="@style/CalcButton"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:text="@string/divide"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCalcResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/result"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Know Your Number Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/orange_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="@string/know_your_number"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/instruction_know_your_number"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/etSingleNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnFactorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#0288D1"
+                android:text="@string/factorial"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnEvenOdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#01579B"
+                android:text="@string/even_odd"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvNumResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/output"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

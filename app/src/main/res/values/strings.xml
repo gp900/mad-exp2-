@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name" tools:ignore="DuplicateDefinition">Combined Utility App</string>
+    <string name="basic_calculator">Basic Calculator</string>
+    <string name="enter_first_number">Enter first number</string>
+    <string name="enter_second_number">Enter second number</string>
+    <string name="plus">+</string>
+    <string name="minus">−</string>
+    <string name="multiply">×</string>
+    <string name="divide">÷</string>
+    <string name="result">Result: 0</string>
+    <string name="know_your_number">Know Your Number</string>
+    <string name="instruction_know_your_number">Enter a number and choose an option below:</string>
+    <string name="enter_number">Enter a number</string>
+    <string name="factorial">Factorial</string>
+    <string name="even_odd">Even / Odd</string>
+    <string name="output">Output:</string>
+
+</resources>
